@@ -67,7 +67,7 @@ def func(s):
         print(i, end=' ')
     print()
 
-    
+
 def diag():
     with open('sequence.txt') as sequence:
         ls = [float(i) for i in sequence]
@@ -82,7 +82,8 @@ def diag():
             print('\t' + f'\x1b[48;5;231m{line1}' + f'\x1b[48;5;21m{line2}' + '\x1b[0;5;0m')
         print('\t' + ' '*49 + '|')
         print(' '*20 ,'-10 < x < -5', ' '*45, '5 < x < 10')
-        print('\t'*3 ,lproc1, ' '*50, lproc2)
+        print('\t'*3 ,lproc1, '%', ' '*48, lproc2, '%')
+    
 
 
 flag()
